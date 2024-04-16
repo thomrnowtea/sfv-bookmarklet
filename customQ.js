@@ -1,3 +1,4 @@
+var CHBookmarklet = (function() {
 var url = prompt("[CustomQ v1.0 |  by SFV_Cinema]\nInserta tu lugar de fila:");
 var uuidMatch = url.match(/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}/i);
 if (!uuidMatch) {
@@ -25,3 +26,4 @@ for (var i = 0; i < cookies.length; i++) {
     }
 }
 alert("[CustomQ v1.0 |  by SFV_Cinema]\nLa cookie para cambiar tu lugar de fila no ha sido encontrada!");
+})();
